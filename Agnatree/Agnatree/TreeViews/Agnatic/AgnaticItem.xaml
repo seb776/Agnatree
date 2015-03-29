@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TextBlock IsEnabled="True" Foreground="Black">
+        <TextBlock IsEnabled="True" Foreground="Black" Margin="74,53,-74,-53">
             salut
             <TextBlock.RenderTransform>
                 <RotateTransform  x:Name="Text" Angle="{Binding}"/>
