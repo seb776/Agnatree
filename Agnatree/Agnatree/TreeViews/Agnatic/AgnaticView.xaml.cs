@@ -24,5 +24,18 @@ namespace Agnatree.TreeViews.Agnatic
         {
             InitializeComponent();
         }
+        public void AddChild(String position)
+        {
+            AgnaticItem item = new AgnaticItem();
+
+            item.PositionID = position;
+            item.CalcAngle();
+            item.CalcPoints();
+            this.Grid.Children.Add( item );
+        }
+        void RemoveChild(String position)
+        {
+            throw new System.Exception("Not implemented: AgnaticView.RemoveChild()");
+        }
     }
 }

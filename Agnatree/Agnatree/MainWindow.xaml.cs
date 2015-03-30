@@ -23,9 +23,10 @@ namespace Agnatree
         public MainWindow()
         {
             InitializeComponent();
-            TreeViews.Agnatic.AgnaticItem a = new TreeViews.Agnatic.AgnaticItem();
-            a.IsEnabled = true;
-            this.Workspace.Children.Add(a);
+            Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
+            agV.AddChild( "001" );
+            agV.AddChild( "000" );
+            this.Workspace.Children.Add( agV );
         }
     }
 }
