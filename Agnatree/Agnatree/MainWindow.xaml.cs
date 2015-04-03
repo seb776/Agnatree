@@ -24,8 +24,6 @@ namespace Agnatree
         {
             InitializeComponent();
             Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
-            agV.AddChild( "001" );
-            agV.AddChild( "000" );
             this.Workspace.Children.Add( agV );
         }
     }

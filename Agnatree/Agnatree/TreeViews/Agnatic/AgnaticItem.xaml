@@ -7,12 +7,13 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Polygon Points="0,50 120,200 160,175 50,0" Stroke="Gray" Fill="White" StrokeThickness="1" x:Name="Polys" MouseLeftButtonDown="Polys_MouseLeftButtonDown"/>
-        <TextBlock IsEnabled="True" Foreground="BlueViolet" Margin="0,0,192,286">
+        <!--<TextBlock IsEnabled="True" Foreground="BlueViolet" Margin="0,0,64,107">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <RotateTransform  x:Name="Text" Angle="{Binding}"/>
                     <TranslateTransform x:Name="TextPos"/>
                 </TransformGroup>
-            </TextBlock.RenderTransform><Run Text="salut"/></TextBlock>
+            </TextBlock.RenderTransform>
+        </TextBlock>-->
     </Grid>
 </UserControl>

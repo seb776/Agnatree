@@ -103,27 +103,27 @@ namespace Agnatree.TreeViews.Agnatic
 
         public void CalcAngle()
         {
-            var angles = CalcAngles();
-            this.TextPos.X = -(50 * PositionID.Length + 50) * Math.Cos((angles.Item1 + angles.Item2) / 2);
-            this.TextPos.Y = -(50 * PositionID.Length + 50) * Math.Sin((angles.Item1 + angles.Item2) / 2);
-            double _base = 45;
-            double angle = 0;
-            if (PositionID.CompareTo( "0" ) != 0)
-            {
-                foreach (char c in PositionID)
-                {
-                    if (c == '1')
-                        angle = angle - _base;
-                    else
-                        angle = angle + _base;
+            //var angles = CalcAngles();
+            //this.TextPos.X = -(50 * PositionID.Length + 50) * Math.Cos((angles.Item1 + angles.Item2) / 2);
+            //this.TextPos.Y = -(50 * PositionID.Length + 50) * Math.Sin((angles.Item1 + angles.Item2) / 2);
+            //double _base = 45;
+            //double angle = 0;
+            //if (PositionID.CompareTo( "0" ) != 0)
+            //{
+            //    foreach (char c in PositionID)
+            //    {
+            //        if (c == '1')
+            //            angle = angle - _base;
+            //        else
+            //            angle = angle + _base;
 
-                    _base = _base / 2;
-                }
-            }
-            this.Text.Angle = angle;
+            //        _base = _base / 2;
+            //    }
+            //}
+            //this.Text.Angle = angle;
         }
 
-        private void Polys_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        virtual public void Polys_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.Polys.Stroke = new SolidColorBrush( Colors.Red );
         }

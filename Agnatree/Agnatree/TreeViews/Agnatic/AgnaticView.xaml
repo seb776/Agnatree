@@ -7,6 +7,6 @@
              d:DesignHeight="300" d:DesignWidth="300"
              xmlns:Ext="clr-namespace:Agnatree.TreeViews.Agnatic">
     <Grid x:Name="Grid">
-        <Ext:AgnaticItem PositionID="0"/>
+        <!--<Ext:AgnaticItem PositionID="0"/>-->
     </Grid>
 </UserControl>

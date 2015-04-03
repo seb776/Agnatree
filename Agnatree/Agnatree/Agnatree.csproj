@@ -68,6 +68,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TreeViews\Agnatic\AddAgnaticItem.cs" />
     <Compile Include="TreeViews\Agnatic\AgnaticItem.xaml.cs">
       <DependentUpon>AgnaticItem.xaml</DependentUpon>
     </Compile>

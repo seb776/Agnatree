@@ -23,12 +23,23 @@ namespace Agnatree.TreeViews.Agnatic
         public AgnaticView()
         {
             InitializeComponent();
+            AddChild( "0" );
         }
         public void AddChild(String position)
         {
             AgnaticItem item = new AgnaticItem();
 
             item.PositionID = position;
+            item.CalcAngle();
+            item.CalcPoints();
+            this.Grid.Children.Add( item );
+            item = new AddAgnaticItem();
+            item.PositionID = position + "0";
+            item.CalcAngle();
+            item.CalcPoints();
+            this.Grid.Children.Add(item);
+            item = new AddAgnaticItem();
+            item.PositionID = position + "1";
             item.CalcAngle();
             item.CalcPoints();
             this.Grid.Children.Add( item );
