@@ -1,6 +1,7 @@
 ﻿<Window x:Class="Agnatree.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Ext="clr-namespace:Agnatree.Views.Controls"
         Title="Agnatree" Height="768" Width="1024">
     <Grid Background="DimGray">
         <Grid.RowDefinitions>
@@ -8,6 +9,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="#424242">
+            <Ext:Button Width="100"/>
             <Button Background="White" Width="100">New</Button>
             <Button Background="Blue" Width="100">Open</Button>
             <Button Background="Magenta" Width="100">Save</Button>
@@ -18,7 +20,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
-                <Grid Background="Beige" Width="1500" Height="1500" x:Name="Workspace">
+                <Grid Background="Beige" Width="2500" Height="2500" x:Name="Workspace">
                 </Grid>
             </ScrollViewer>
         </Grid>
