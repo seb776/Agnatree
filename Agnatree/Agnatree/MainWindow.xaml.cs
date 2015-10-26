@@ -23,15 +23,15 @@ namespace Agnatree
         public MainWindow()
         {
             InitializeComponent();
-            //Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
-            //agV.Margin = new Thickness(150, 150, 0, 0);
-            //this.Workspace.Children.Add(agV);
+            Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
+            agV.Margin = new Thickness(150, 150, 0, 0);
+            this.Workspace.Children.Add(agV);
 
             var a = new Agnatree.TreeViews.Tree.Tree();
             //a.Margin = new Thickness(150, 150, 0, 0);
             this.Workspace.Children.Add(a);
-            a.MainBranchTmp.LeftBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
-            a.MainBranchTmp.RightBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
+            //a.MainBranchTmp.LeftBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
+            //a.MainBranchTmp.RightBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
         }
     }
 }
