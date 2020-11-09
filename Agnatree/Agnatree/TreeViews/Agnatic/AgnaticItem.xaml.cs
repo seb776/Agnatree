@@ -104,8 +104,8 @@ namespace Agnatree.TreeViews.Agnatic
         public void CalcAngle()
         {
             //var angles = CalcAngles();
-            //this.TextPos.X = -(50 * PositionID.Length + 50) * Math.Cos((angles.Item1 + angles.Item2) / 2);
-            //this.TextPos.Y = -(50 * PositionID.Length + 50) * Math.Sin((angles.Item1 + angles.Item2) / 2);
+            //this.TextPos.X = -(50 * PositionID.Length + 50) * Math.Cos( (angles.Item1 + angles.Item2) / 2 );
+            //this.TextPos.Y = -(50 * PositionID.Length + 50) * Math.Sin( (angles.Item1 + angles.Item2) / 2 );
             //double _base = 45;
             //double angle = 0;
             //if (PositionID.CompareTo( "0" ) != 0)

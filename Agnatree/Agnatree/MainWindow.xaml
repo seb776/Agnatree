@@ -8,11 +8,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="#424242">
-            <Button Background="White" Width="100">New</Button>
-            <Button Background="Blue" Width="100">Open</Button>
-            <Button Background="Magenta" Width="100">Save</Button>
+            <Button Foreground="Black" Background="White" Width="100">New</Button>
+            <Button Foreground="Black" Background="Blue" Width="100">Open</Button>
+            <Button Foreground="Black" Background="Magenta" Width="100">Save</Button>
+            <Button Foreground="Black" Background="Gray" Width="100" Click="Button_Click_1">Individual</Button>
+            <Button Foreground="Black" Background="Green" Width="100" Click="Button_Click">View</Button>
         </StackPanel>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" x:Name="ViewGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>

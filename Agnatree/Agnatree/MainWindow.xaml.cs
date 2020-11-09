@@ -26,5 +26,16 @@ namespace Agnatree
             Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
             this.Workspace.Children.Add( agV );
         }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.ViewGrid.IsEnabled = false;
+            this.ViewGrid.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.ViewGrid.IsEnabled = true;
+            this.ViewGrid.Visibility = Visibility.Visible;
+        }
     }
 }
