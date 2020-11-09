@@ -24,7 +24,14 @@ namespace Agnatree
         {
             InitializeComponent();
             Agnatree.TreeViews.Agnatic.AgnaticView agV = new Agnatree.TreeViews.Agnatic.AgnaticView();
-            this.Workspace.Children.Add( agV );
+            agV.Margin = new Thickness(150, 150, 0, 0);
+            this.Workspace.Children.Add(agV);
+
+            var a = new Agnatree.TreeViews.Tree.Tree();
+            //a.Margin = new Thickness(150, 150, 0, 0);
+            this.Workspace.Children.Add(a);
+            //a.MainBranchTmp.LeftBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
+            //a.MainBranchTmp.RightBranch.Children.Add(new TreeViews.Tree.FamilyBranch());
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

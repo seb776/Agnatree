@@ -4,9 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <TextBlock IsEnabled="True" Foreground="BlueViolet" Margin="0,0,170,215">
+             d:DesignHeight="300" d:DesignWidth="300" Width="Auto" Height="Auto">
+    <Grid x:Name="GridItem" Width="Auto" Height="Auto">
+        <Label x:Name="NodeContent" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top">Node</Label>
+        <Label x:Name="NodeContent1" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top">Node</Label>
+        <Label x:Name="NodeContent2" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top">Node</Label>
+        <Polygon Points="0,50 120,200 160,175 50,0" Stroke="Gray" Fill="White" Opacity="0.5" StrokeThickness="1" x:Name="Polys" MouseLeftButtonDown="Polys_MouseLeftButtonDown"/>
+        <!--<TextBlock IsEnabled="True" Foreground="BlueViolet" Margin="0,0,64,107">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <RotateTransform  x:Name="Text" Angle="{Binding}"/>

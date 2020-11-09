@@ -11,9 +11,9 @@ namespace Agnatree.TreeViews.Agnatic
 {
     public class AddAgnaticItem : AgnaticItem
     {
-        public AddAgnaticItem()
+        public AddAgnaticItem(AgnaticView view) : base(view)
         {
-            this.Polys.Fill = new System.Windows.Media.SolidColorBrush( System.Windows.Media.Color.FromArgb(0xFF, 0x82, 0xb3, 0xae));
+            this.Polys.Fill = new System.Windows.Media.SolidColorBrush( System.Windows.Media.Color.FromArgb(0x42, 0x82, 0xb3, 0xae));
         }
 
         override public void Polys_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
